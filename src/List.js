@@ -13,7 +13,7 @@ const List = (props) => {
         <View>
             <NavigationBar
                 statusBar={{ style: 'light-content' }}
-                tintColor="#159588"
+                tintColor="#C91821"
                 title={{ tintColor: '#fff', title: 'Give Me Coupons!' }} />
             <ListView
                 automaticallyAdjustContentInsets={ false }
