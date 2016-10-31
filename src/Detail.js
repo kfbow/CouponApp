@@ -180,14 +180,14 @@ const Detail = (props) => {
                 </View>
             </ScrollView>
 
-            <TouchableOpacity
-                onPress={ () => onButtonPress(data) }>
-                <View style={ styles.promoContainer }>
+            <View style={ styles.promoContainer }>
+                <TouchableOpacity
+                    onPress={ () => onButtonPress(data) }>
                     <Text style={ styles.promoReveal }>
                         Reveal Promo Code
                     </Text>
-                </View>
-            </TouchableOpacity>
+                </TouchableOpacity>
+            </View>
 
         </View>
     )
