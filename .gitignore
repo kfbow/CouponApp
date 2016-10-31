@@ -41,4 +41,4 @@ android/app/libs
 android/keystores/debug.keystore
 
 # OTHER
-_tests_
+_tests_/
