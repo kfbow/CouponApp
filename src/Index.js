@@ -13,6 +13,8 @@ import {
 import { Map } from 'immutable';
 import List from './List';
 import Detail from './Detail';
+import Home from './Home';
+import NavigationBar from 'react-native-navbar';
 import qs from 'qs';
 import Dimensions from 'Dimensions';
 
@@ -33,6 +35,7 @@ export default class Index extends Component {
         page: number,
         rows: Array<*>,
         showModal: bool,
+        showSquares: bool,
     }
 
     constructor(props: Props) {
@@ -48,6 +51,7 @@ export default class Index extends Component {
             fetchMore: false,
             page: 1,
             rows: [],
+            showSquares: true,
         };
     }
 
@@ -65,6 +69,21 @@ export default class Index extends Component {
         */
         this.fetch(this.state.page + 1, true);
     };
+
+    // Allows the user to pick the view style
+    renderListType = () => {
+        if (this.state.showSquares) {
+            return <Home
+                dataSource={ this.state.dataSource }
+                setStateObject={ this.setStateObject }
+                onEndReached={ this.getNextPage }/>
+        }
+
+        return <List
+            dataSource={ this.state.dataSource }
+            setStateObject={ this.setStateObject }
+            onEndReached={ this.getNextPage } />
+    }
 
     render() {
         const showModal = this.state.showModal;
@@ -91,10 +110,21 @@ export default class Index extends Component {
 
         return (
             <View>
-                <List
-                    dataSource={ this.state.dataSource }
-                    setStateObject={ this.setStateObject }
-                    onEndReached={ this.getNextPage } />
+                <NavigationBar
+                    statusBar={{ style: 'light-content' }}
+                    tintColor="#C91821"
+                    rightButton={{
+                        title: this.state.showSquares ? 'List' : 'Explore',
+                        handler: () => {
+                            this.setState(
+                                { showSquares: !this.state.showSquares }
+                            )
+                        },
+                        tintColor: '#fff'
+                    }}
+                    title={{ tintColor: '#fff', title: 'Give Me Coupons!' }} />
+
+                    { this.renderListType() }
 
                 <Modal
                     animationType="slide"

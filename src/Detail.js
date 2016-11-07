@@ -128,8 +128,7 @@ const Detail = (props) => {
             <StatusBar
                 hidden={ true } />
             <ScrollView
-                style={ styles.container }
-                contentInset={{ bottom: dimensions.height * .1 }}>
+                style={ styles.container }>
                 <Text
                     style={{ padding: 20 }}
                     onPress={ () => onClose(setStateObject, data) }>
@@ -178,6 +177,7 @@ const Detail = (props) => {
                         </Text>
                     </View>
                 </View>
+                <View style={{ marginBottom: dimensions.height * .1 }} />
             </ScrollView>
 
             <View style={ styles.promoContainer }>
