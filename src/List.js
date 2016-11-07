@@ -3,7 +3,6 @@
 
 import React from 'react';
 import { View, ListView, Text } from 'react-native';
-import NavigationBar from 'react-native-navbar';
 import Row from './Row';
 
 const List = (props) => {
@@ -11,10 +10,6 @@ const List = (props) => {
 
     return (
         <View>
-            <NavigationBar
-                statusBar={{ style: 'light-content' }}
-                tintColor="#C91821"
-                title={{ tintColor: '#fff', title: 'Give Me Coupons!' }} />
             <ListView
                 automaticallyAdjustContentInsets={ false }
                 dataSource={ dataSource }
