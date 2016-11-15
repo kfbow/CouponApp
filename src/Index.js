@@ -42,15 +42,15 @@ export default class Index extends Component {
         super(props);
 
         this.state = {
+            data: [],
             dataSource: new ListView.DataSource({
                 rowHasChanged: (row1, row2) => row1.id !== row2.id,
             }),
             fetched: false,
-            showModal: false,
-            data: [],
             fetchMore: false,
             page: 1,
             rows: [],
+            showModal: false,
             showSquares: true,
         };
     }

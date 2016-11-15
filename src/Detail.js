@@ -140,7 +140,7 @@ const Detail = (props) => {
 
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                     <View style={ styles.categoryContainer }>
-                        <Text style={ styles.category }>
+                        <Text>
                             { data.categoryName }
                         </Text>
                     </View>

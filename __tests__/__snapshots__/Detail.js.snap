@@ -1,0 +1,269 @@
+exports[`test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }>
+  <ScrollView
+    style={
+      Object {
+        "padding": 10,
+      }
+    }>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      onPress={[Function]}
+      style={
+        Object {
+          "padding": 20,
+        }
+      }>
+      Close
+    </Text>
+    <Image
+      source={
+        Object {
+          "uri": "https://snagshoutprod-media.s3.amazonaws.com/e837f68e8db72df44cc2c2a0ce47e98c8b7778e2.jpg",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 337.5,
+          "resizeMode": "contain",
+          "width": 337.5,
+        }
+      } />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#CEEAE7",
+            "borderColor": "#CEEAE7",
+            "borderRadius": 20,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "paddingBottom": 4,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 4,
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail">
+          Beauty & Health
+        </Text>
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#ccc",
+          }
+        }>
+        November 30, 2016
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#d3d3d3",
+          "height": 1,
+          "marginTop": 5,
+        }
+      } />
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 30,
+            "marginTop": 20,
+          }
+        }>
+        NuPeptin Lengthening Eye Lash Serum - stimulates l...
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "marginTop": 15,
+          }
+        }>
+        NuPeptin Eye Lash Serum helps stimulate lash growth. For visibly thicker and longer eyelashes. Our Eye Lash Serum is made without parabens and is hypoallergenic. Ophthalmologists recommend this product for lengthening thinning eyelashes and dermatologists have tested it. Our clinical studies have show that after 2 weeks you can expect a 4mm lengthening of the eyelash and in 4 weeks an 8mm lengthening. When testing the active ingredient alone, there was a 25% increase in length in just 2 weeks. For best results, remove makeup with a mild cleaner. At bedtime, apply product as you would liquid eyeliner at the base of the upper and lower lash line. The amount of liquid on the brush is enough for the upper and lower lash line of both eyes.
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "marginTop": 20,
+          }
+        }>
+        <View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#ccc",
+              }
+            }>
+            regular price 
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "textDecorationLine": "line-through",
+                }
+              }>
+              $
+              29.00
+            </Text>
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }>
+            with coupon
+             $
+            4.00
+          </Text>
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          onPress={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#558EFC",
+              "color": "#fff",
+              "padding": 15,
+            }
+          }>
+          See on Amazon
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 66.7,
+        }
+      } />
+  </ScrollView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "bottom": 0,
+        "paddingBottom": 10,
+        "paddingTop": 10,
+        "position": "absolute",
+      }
+    }>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID={undefined}>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "#159588",
+            "color": "#fff",
+            "marginLeft": 18.75,
+            "marginRight": 18.75,
+            "padding": 13.34,
+            "textAlign": "center",
+            "width": 337.5,
+          }
+        }>
+        Reveal Promo Code
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`test renders initial price correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "textDecorationLine": "line-through",
+    }
+  }>
+  $ 29.00
+</Text>
+`;
+
+exports[`test renders item category correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={undefined}>
+  Beauty & Health
+</Text>
+`;
+
+exports[`test renders promo price correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "fontSize": 20,
+    }
+  }>
+  only here $ 4.00
+</Text>
+`;
