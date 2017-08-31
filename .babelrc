@@ -1,3 +1,4 @@
 {
-"presets": ["react-native"]
+"presets": ["react-native", "es2015", "react"],
+"plugins": ["transform-class-properties"]
 }
